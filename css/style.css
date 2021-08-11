@@ -118,12 +118,15 @@ section{
 .mybtn:hover{
 	background: #dc4545;
 	border-color: #dc4545;
+	border-radius: 5px;
 }
 .mybtn:hover::before{
 	background: #dc4545;
+	left: 0;
 }
 .mybtn:hover::after{
 	background: #dc4545;
+	right: 0;
 }
 
 /************************************
@@ -211,6 +214,7 @@ section{
 	margin-top: 40px;
 }
 
+
 /************************************
    *** banner section end ****
 ******************************/
@@ -224,11 +228,14 @@ section{
 	text-align: center;
 	margin-top: 40px;
 	padding: 25px 20px;
-	background: #f7f1f0;
+	background: #eacec9;
 	border-radius: 10px;
+	transition: .5s;
 }
 .service-item:hover{
-	box-shadow: 0px 0px 13px 2px #dac4c1ab;
+	box-shadow: 2px 4px 15px 2px #00000045;
+    background: #fff;
+    margin-top: 20px;
 }
 .service-item h3{
 	font-size: 20px;
@@ -255,7 +262,11 @@ section{
 	border-radius: 10px;
 	overflow: hidden;
 	line-height: 0;
-
+	box-shadow: 9px 13px 24px 0px rgba(0,0,0,0.3);
+	transition: .5s;
+}
+.campus-item:hover{
+	box-shadow: none;
 }
 .overlay{
 	position: absolute;
@@ -283,7 +294,7 @@ section{
 }
 .campus-item:hover .overlay p{
 	opacity: .9;
-	top: 40%;
+	top: 47%;
 }
 
 /************************************
@@ -296,6 +307,13 @@ section{
 
 .facilities-item{
 	margin-top: 40px;
+	padding: 10px;
+	border-radius: 10px;
+	transition: .5s;
+
+}
+.facilities-item:hover{
+	box-shadow: 0px 13px 18px 0px rgba(0,0,0,0.2);
 }
 .facilities-item img{
 	border-radius: 10px;
@@ -326,6 +344,11 @@ section{
 	background: #f7f1f0;
 	border-radius: 10px;
 	display: inline-block;
+	transition: .5s;
+}
+.testimonial-item:hover{
+	box-shadow: 0px 13px 18px 0px rgba(0,0,0,0.2);
+	margin-top: 10px;
 }
 .user img{
 	width: 80%;
@@ -372,6 +395,12 @@ section{
 }
 .contact-bg .btn .mybtn::after{
 	right: -12%;
+}
+.contact-bg .btn .mybtn:hover::before{
+	left: 0%
+}
+.contact-bg .btn .mybtn:hover::after{
+	right: 0%;
 }
 
 /************************************
